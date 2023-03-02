@@ -1,0 +1,29 @@
+<p>Uma classe em Python é uma estrutura de programação que permite definir um conjunto de atributos e métodos que descrevem um objeto. Uma classe é como um modelo ou uma planta para um objeto, e pode ser usada para criar instâncias desse objeto.</p>
+<p>Para definir uma classe em Python, podemos usar a palavra-chave <code>class</code> seguida do nome da classe:</p>
+<pre><code class="language-python">
+class MinhaClasse:
+    # código da classe aqui
+</code></pre>
+<p>Dentro da classe, podemos definir atributos e métodos. Os atributos são variáveis que contêm dados sobre o objeto, enquanto os métodos são funções que realizam operações com esses dados.</p>
+<p>Por exemplo, podemos definir uma classe <code>Pessoa</code> com os atributos <code>nome</code> e <code>idade</code> e o método <code>dizer_nome</code>:</p>
+<pre><code class="language-python">
+class Pessoa:
+    def __init__(self, nome, idade):
+        self.nome = nome
+        self.idade = idade
+
+    def dizer_nome(self):
+        print("Meu nome é", self.nome)
+</code></pre>
+<p>Nesse exemplo, o método <code>__init__</code> é um método especial que é executado quando uma instância da classe é criada. Ele inicializa os atributos da classe com os valores passados para ele. O argumento <code>self</code> refere-se à instância atual da classe.</p>
+<p>Podemos criar uma instância da classe <code>Pessoa</code> usando o seguinte código:</p>
+<pre><code class="language-python">
+pessoa1 = Pessoa("João", 30)
+</code></pre>
+<p>Agora podemos acessar os atributos e métodos da instância <code>pessoa1</code> usando a notação ponto:</p>
+<pre><code class="language-python">
+print(pessoa1.nome)  # saída: "João"
+print(pessoa1.idade)  # saída: 30
+pessoa1.dizer_nome()  # saída: "Meu nome é João"
+</code></pre>
+<p>Dessa forma, podemos usar classes em Python para criar objetos com atributos e métodos que nos permitem trabalhar com esses objetos de maneira mais eficiente e organizada.</p>
